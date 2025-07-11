@@ -38,5 +38,4 @@ Flix Feed fetches data from the TMDB API and displays it in a table view. Each c
    cd flix-feed
 
 ## TMDB API
-This project uses the TMDB API. You must register for an API key and add it to your network request headers or URL as required.
-Learning Highlights
+This project uses TMDB and the TMDB APIs but is not endorsed, certified, or otherwise approved by TMDB. You must register for an API key and add it to your network request headers or URL as required. 
