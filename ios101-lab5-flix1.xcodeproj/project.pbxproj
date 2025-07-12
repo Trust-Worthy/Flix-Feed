@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67ABC5C22E21F30F00DE37A1 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ABC5C12E21F30F00DE37A1 /* MovieCell.swift */; };
 		ED83EE9A29B05FCE007A4FC9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83EE9929B05FCE007A4FC9 /* Movie.swift */; };
 		ED88ABF229AD9858008A6FF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABF129AD9858008A6FF6 /* AppDelegate.swift */; };
 		ED88ABF429AD9858008A6FF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABF329AD9858008A6FF6 /* SceneDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67ABC5C12E21F30F00DE37A1 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		ED83EE9929B05FCE007A4FC9 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		ED88ABEE29AD9858008A6FF6 /* ios101-lab5-flix1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios101-lab5-flix1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED88ABF129AD9858008A6FF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				ED88ABF529AD9858008A6FF6 /* ViewController.swift */,
 				ED83EE9929B05FCE007A4FC9 /* Movie.swift */,
 				ED88ABF729AD9858008A6FF6 /* Main.storyboard */,
+				67ABC5C12E21F30F00DE37A1 /* MovieCell.swift */,
 				ED88ABFA29AD9859008A6FF6 /* Assets.xcassets */,
 				ED88ABFC29AD9859008A6FF6 /* LaunchScreen.storyboard */,
 				ED88ABFF29AD9859008A6FF6 /* Info.plist */,
@@ -161,6 +164,7 @@
 				ED88ABF629AD9858008A6FF6 /* ViewController.swift in Sources */,
 				ED88ABF229AD9858008A6FF6 /* AppDelegate.swift in Sources */,
 				ED83EE9A29B05FCE007A4FC9 /* Movie.swift in Sources */,
+				67ABC5C22E21F30F00DE37A1 /* MovieCell.swift in Sources */,
 				ED88ABF429AD9858008A6FF6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
