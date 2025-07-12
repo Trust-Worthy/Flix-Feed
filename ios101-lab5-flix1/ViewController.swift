@@ -7,11 +7,25 @@ import UIKit
 import NukeExtensions
 
 // TODO: Add table view data source conformance
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // return the number of rows for the table
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Create, configure, and return a table view cell for the given row (i.e., `indexPath.row`)
+        // create the cell
+        let cell = UITableViewCell()
+        
+        // Configure the cell
+    }
+    
 
 
     // TODO: Add table view outlet
-
+    @IBOutlet weak var tableView: UITableView!
+    
 
     // TODO: Add property to store fetched movies array
 
@@ -20,7 +34,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         // TODO: Assign table view data source
-
+        // The view controller will act as the tableViews data source
+        // the data source tells the table view how many cells to display
+        // the data source provides the cell UI to use in each table view row
+        tableView.dataSource = self
 
         fetchMovies()
     }
