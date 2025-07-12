@@ -10,7 +10,8 @@ import NukeExtensions
 class ViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // return the number of rows for the table
-        return 50
+        print("🍏 numberOfRowsInSection called with movies count: \(movies.count)")
+        return movies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -18,7 +19,17 @@ class ViewController: UIViewController, UITableViewDataSource {
         // create the cell
         let cell = UITableViewCell()
         
-        // Configure the cell
+        
+        // Get the row where the cell will be placed using the 'row' property on the passed in 'indexPath
+        // get the movie-associated table view row
+        let movie = movies[indexPath.row]
+        
+        // Configure the cell: update UI elements like labels, image views , etc
+        cell.textLabel?.text = movie.title
+        
+        print("🍏 cellForRowAt called for row: \(indexPath.row)")
+        return cell
+        
     }
     
 
@@ -28,7 +39,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
 
     // TODO: Add property to store fetched movies array
-
+    private var movies: [Movie] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,7 +98,7 @@ class ViewController: UIViewController, UITableViewDataSource {
 
                     // We have movies! Do something with them!
                     print("✅ SUCCESS!!! Fetched \(movies.count) movies")
-
+                    
                     // Iterate over all movies and print out their details.
                     for movie in movies {
                         print("🍿 MOVIE ------------------")
@@ -96,8 +107,9 @@ class ViewController: UIViewController, UITableViewDataSource {
                     }
 
                     // TODO: Store movies in the `movies` property on the view controller
-
-
+                    self?.movies = movies
+                    print("🍏 Fetched and stored \(movies.count) movies")
+                    self?.tableView.reloadData()
 
                 }
             } catch {
