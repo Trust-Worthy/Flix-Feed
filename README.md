@@ -9,7 +9,7 @@ Flix Feed is an iOS app that fetches and displays movies from The Movie Database
 Flix Feed fetches data from the TMDB API and displays it in a table view. Each cell shows a movie poster, title, and description.
 
 ---
-
+![16_app_required_features](https://user-images.githubusercontent.com/11927517/223374834-93edad78-9273-45d1-9d42-50ece5bb5b51.gif)
 ## Features
 
 - Fetch movie data from The Movie Database (TMDB) API
