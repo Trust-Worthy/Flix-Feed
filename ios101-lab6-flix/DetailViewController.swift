@@ -56,6 +56,23 @@ class   DetailViewController: UIViewController {
         
         
         // MARK: - Configure the image views
+        if let posterPath = movie.posterPath,
+        // create a url by appending the poster path to the base url
+        let imageURL = URL(string: "https://image.tmdb.org/t/p/w500" + posterPath) {
+            NukeExtensions.loadImage(with: imageURL, into: posterImageView)
+            
+        }
+        
+        if let backdropPath = movie.backdropPath,
+           
+        // Create a url by appending the backdrop path to the base url
+        let imageUrl = URL(string:  "https://image.tmdb.org/t/p/w500" + backdropPath) {
+            
+            // use the nukeExtensions library's load image
+            NukeExtensions.loadImage(with: imageUrl, into: backdropImageView)
+            
+        
+        }
         
     }
     

@@ -67,6 +67,20 @@ class ViewController: UIViewController, UITableViewDataSource {
 
         fetchMovies()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // This is the prepare for segue method.
+        guard let selectedIndexPath: IndexPath = tableView.indexPathForSelectedRow else {return}
+        
+        let selectedMovie = movies[selectedIndexPath.row]
+        
+        // get access to the detail view controller via the segue's destination
+        
+        guard let detailViewController = segue.destination as? DetailViewController else {return}
+        
+        detailViewController.movie = selectedMovie
+        
+    }
 
     // Fetches a list of popular movies from the TMDB API
     private func fetchMovies() {
