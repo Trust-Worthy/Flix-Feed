@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import NukeExtensions
 
 class   DetailViewController: UIViewController {
 
@@ -21,21 +22,43 @@ class   DetailViewController: UIViewController {
     
     @IBOutlet weak var releaseDateLabel: UILabel!
     
+    // property to store the passed in movie
+    var movie: Movie!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+        // MARK: - Configure the Labels
+        titleLabel.text = movie.title
+        overviewLabel.text = movie.overview
+        
+        // Unwrap the optional vote average
+        if let voteAverage = movie.voteAverage {
+            
+            voteLabel.text = "Vote Average: \(voteAverage)"
+        } else {
+            // if vote average is nil, set vote average label text to empty string
+            voteLabel.text = ""
+        }
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        
+        // unwrap the optional release date
+        if let releaseDate = movie.releaseDate {
+            let releaseDateString = dateFormatter.string(from: releaseDate)
+            releaseDateLabel.text = "Release Date: \(releaseDateString)"
+        } else {
+            // if release date is nil
+            releaseDateLabel.text = ""
+        }
+        
+        
+        // MARK: - Configure the image views
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  
 }
