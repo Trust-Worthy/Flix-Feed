@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		67ABC5C22E21F30F00DE37A1 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ABC5C12E21F30F00DE37A1 /* MovieCell.swift */; };
 		ED83EE9A29B05FCE007A4FC9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83EE9929B05FCE007A4FC9 /* Movie.swift */; };
+		ED83EEA129B71218007A4FC9 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83EEA029B71218007A4FC9 /* MovieCell.swift */; };
 		ED88ABF229AD9858008A6FF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABF129AD9858008A6FF6 /* AppDelegate.swift */; };
 		ED88ABF429AD9858008A6FF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABF329AD9858008A6FF6 /* SceneDelegate.swift */; };
 		ED88ABF629AD9858008A6FF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88ABF529AD9858008A6FF6 /* ViewController.swift */; };
 		ED88ABF929AD9858008A6FF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED88ABF729AD9858008A6FF6 /* Main.storyboard */; };
 		ED88ABFB29AD9859008A6FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED88ABFA29AD9859008A6FF6 /* Assets.xcassets */; };
 		ED88ABFE29AD9859008A6FF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED88ABFC29AD9859008A6FF6 /* LaunchScreen.storyboard */; };
-		EDDD50422DC3F1E200B71C96 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = EDDD50412DC3F1E200B71C96 /* Nuke */; };
-		EDDD50442DC3F1E200B71C96 /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = EDDD50432DC3F1E200B71C96 /* NukeExtensions */; };
-		EDDD50462DC3F1E200B71C96 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = EDDD50452DC3F1E200B71C96 /* NukeUI */; };
-		EDDD50482DC3F1E200B71C96 /* NukeVideo in Frameworks */ = {isa = PBXBuildFile; productRef = EDDD50472DC3F1E200B71C96 /* NukeVideo */; };
+		EDDD50542DC4176600B71C96 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = EDDD50532DC4176600B71C96 /* Nuke */; };
+		EDDD50562DC4176600B71C96 /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = EDDD50552DC4176600B71C96 /* NukeExtensions */; };
+		EDDD50582DC4176600B71C96 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = EDDD50572DC4176600B71C96 /* NukeUI */; };
+		EDDD505A2DC4176600B71C96 /* NukeVideo in Frameworks */ = {isa = PBXBuildFile; productRef = EDDD50592DC4176600B71C96 /* NukeVideo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		67ABC5C12E21F30F00DE37A1 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		ED83EE9929B05FCE007A4FC9 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		ED88ABEE29AD9858008A6FF6 /* ios101-lab5-flix1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios101-lab5-flix1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED83EEA029B71218007A4FC9 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		ED88ABEE29AD9858008A6FF6 /* ios101-lab6-flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios101-lab6-flix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED88ABF129AD9858008A6FF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED88ABF329AD9858008A6FF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ED88ABF529AD9858008A6FF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,10 +39,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDDD50462DC3F1E200B71C96 /* NukeUI in Frameworks */,
-				EDDD50422DC3F1E200B71C96 /* Nuke in Frameworks */,
-				EDDD50442DC3F1E200B71C96 /* NukeExtensions in Frameworks */,
-				EDDD50482DC3F1E200B71C96 /* NukeVideo in Frameworks */,
+				EDDD50582DC4176600B71C96 /* NukeUI in Frameworks */,
+				EDDD50542DC4176600B71C96 /* Nuke in Frameworks */,
+				EDDD50562DC4176600B71C96 /* NukeExtensions in Frameworks */,
+				EDDD505A2DC4176600B71C96 /* NukeVideo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +52,7 @@
 		ED88ABE529AD9858008A6FF6 = {
 			isa = PBXGroup;
 			children = (
-				ED88ABF029AD9858008A6FF6 /* ios101-lab5-flix1 */,
+				ED88ABF029AD9858008A6FF6 /* ios101-lab6-flix */,
 				ED88ABEF29AD9858008A6FF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,33 +60,33 @@
 		ED88ABEF29AD9858008A6FF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED88ABEE29AD9858008A6FF6 /* ios101-lab5-flix1.app */,
+				ED88ABEE29AD9858008A6FF6 /* ios101-lab6-flix.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED88ABF029AD9858008A6FF6 /* ios101-lab5-flix1 */ = {
+		ED88ABF029AD9858008A6FF6 /* ios101-lab6-flix */ = {
 			isa = PBXGroup;
 			children = (
 				ED88ABF129AD9858008A6FF6 /* AppDelegate.swift */,
 				ED88ABF329AD9858008A6FF6 /* SceneDelegate.swift */,
 				ED88ABF529AD9858008A6FF6 /* ViewController.swift */,
 				ED83EE9929B05FCE007A4FC9 /* Movie.swift */,
+				ED83EEA029B71218007A4FC9 /* MovieCell.swift */,
 				ED88ABF729AD9858008A6FF6 /* Main.storyboard */,
-				67ABC5C12E21F30F00DE37A1 /* MovieCell.swift */,
 				ED88ABFA29AD9859008A6FF6 /* Assets.xcassets */,
 				ED88ABFC29AD9859008A6FF6 /* LaunchScreen.storyboard */,
 				ED88ABFF29AD9859008A6FF6 /* Info.plist */,
 			);
-			path = "ios101-lab5-flix1";
+			path = "ios101-lab6-flix";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED88ABED29AD9858008A6FF6 /* ios101-lab5-flix1 */ = {
+		ED88ABED29AD9858008A6FF6 /* ios101-lab6-flix */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED88AC0229AD9859008A6FF6 /* Build configuration list for PBXNativeTarget "ios101-lab5-flix1" */;
+			buildConfigurationList = ED88AC0229AD9859008A6FF6 /* Build configuration list for PBXNativeTarget "ios101-lab6-flix" */;
 			buildPhases = (
 				ED88ABEA29AD9858008A6FF6 /* Sources */,
 				ED88ABEB29AD9858008A6FF6 /* Frameworks */,
@@ -96,15 +96,15 @@
 			);
 			dependencies = (
 			);
-			name = "ios101-lab5-flix1";
+			name = "ios101-lab6-flix";
 			packageProductDependencies = (
-				EDDD50412DC3F1E200B71C96 /* Nuke */,
-				EDDD50432DC3F1E200B71C96 /* NukeExtensions */,
-				EDDD50452DC3F1E200B71C96 /* NukeUI */,
-				EDDD50472DC3F1E200B71C96 /* NukeVideo */,
+				EDDD50532DC4176600B71C96 /* Nuke */,
+				EDDD50552DC4176600B71C96 /* NukeExtensions */,
+				EDDD50572DC4176600B71C96 /* NukeUI */,
+				EDDD50592DC4176600B71C96 /* NukeVideo */,
 			);
 			productName = "ios101-lab5-flix1";
-			productReference = ED88ABEE29AD9858008A6FF6 /* ios101-lab5-flix1.app */;
+			productReference = ED88ABEE29AD9858008A6FF6 /* ios101-lab6-flix.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -122,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ED88ABE929AD9858008A6FF6 /* Build configuration list for PBXProject "ios101-lab5-flix1" */;
+			buildConfigurationList = ED88ABE929AD9858008A6FF6 /* Build configuration list for PBXProject "ios101-lab6-flix" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,13 +132,13 @@
 			);
 			mainGroup = ED88ABE529AD9858008A6FF6;
 			packageReferences = (
-				EDDD50402DC3F1E200B71C96 /* XCRemoteSwiftPackageReference "Nuke" */,
+				EDDD50522DC4176600B71C96 /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = ED88ABEF29AD9858008A6FF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED88ABED29AD9858008A6FF6 /* ios101-lab5-flix1 */,
+				ED88ABED29AD9858008A6FF6 /* ios101-lab6-flix */,
 			);
 		};
 /* End PBXProject section */
@@ -164,7 +164,7 @@
 				ED88ABF629AD9858008A6FF6 /* ViewController.swift in Sources */,
 				ED88ABF229AD9858008A6FF6 /* AppDelegate.swift in Sources */,
 				ED83EE9A29B05FCE007A4FC9 /* Movie.swift in Sources */,
-				67ABC5C22E21F30F00DE37A1 /* MovieCell.swift in Sources */,
+				ED83EEA129B71218007A4FC9 /* MovieCell.swift in Sources */,
 				ED88ABF429AD9858008A6FF6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ios101-lab5-flix1/Info.plist";
+				INFOPLIST_FILE = "ios101-lab6-flix/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -324,7 +324,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.ios101-lab5-flix1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.ios101-lab6-flix";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -340,7 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ios101-lab5-flix1/Info.plist";
+				INFOPLIST_FILE = "ios101-lab6-flix/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -351,7 +351,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.ios101-lab5-flix1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.ios101-lab6-flix";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -362,7 +362,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED88ABE929AD9858008A6FF6 /* Build configuration list for PBXProject "ios101-lab5-flix1" */ = {
+		ED88ABE929AD9858008A6FF6 /* Build configuration list for PBXProject "ios101-lab6-flix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED88AC0029AD9859008A6FF6 /* Debug */,
@@ -371,7 +371,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED88AC0229AD9859008A6FF6 /* Build configuration list for PBXNativeTarget "ios101-lab5-flix1" */ = {
+		ED88AC0229AD9859008A6FF6 /* Build configuration list for PBXNativeTarget "ios101-lab6-flix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED88AC0329AD9859008A6FF6 /* Debug */,
@@ -383,7 +383,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EDDD50402DC3F1E200B71C96 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+		EDDD50522DC4176600B71C96 /* XCRemoteSwiftPackageReference "Nuke" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kean/Nuke";
 			requirement = {
@@ -394,24 +394,24 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EDDD50412DC3F1E200B71C96 /* Nuke */ = {
+		EDDD50532DC4176600B71C96 /* Nuke */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EDDD50402DC3F1E200B71C96 /* XCRemoteSwiftPackageReference "Nuke" */;
+			package = EDDD50522DC4176600B71C96 /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = Nuke;
 		};
-		EDDD50432DC3F1E200B71C96 /* NukeExtensions */ = {
+		EDDD50552DC4176600B71C96 /* NukeExtensions */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EDDD50402DC3F1E200B71C96 /* XCRemoteSwiftPackageReference "Nuke" */;
+			package = EDDD50522DC4176600B71C96 /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = NukeExtensions;
 		};
-		EDDD50452DC3F1E200B71C96 /* NukeUI */ = {
+		EDDD50572DC4176600B71C96 /* NukeUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EDDD50402DC3F1E200B71C96 /* XCRemoteSwiftPackageReference "Nuke" */;
+			package = EDDD50522DC4176600B71C96 /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = NukeUI;
 		};
-		EDDD50472DC3F1E200B71C96 /* NukeVideo */ = {
+		EDDD50592DC4176600B71C96 /* NukeVideo */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EDDD50402DC3F1E200B71C96 /* XCRemoteSwiftPackageReference "Nuke" */;
+			package = EDDD50522DC4176600B71C96 /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = NukeVideo;
 		};
 /* End XCSwiftPackageProductDependency section */
