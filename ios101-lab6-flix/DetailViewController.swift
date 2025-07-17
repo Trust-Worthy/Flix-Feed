@@ -28,6 +28,10 @@ class   DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // make the title small
+        navigationItem.largeTitleDisplayMode = .never
+
+        
         
         // MARK: - Configure the Labels
         titleLabel.text = movie.title

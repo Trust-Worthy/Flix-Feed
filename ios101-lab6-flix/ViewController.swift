@@ -64,6 +64,10 @@ class ViewController: UIViewController, UITableViewDataSource {
 
         // Assign table view data source
         tableView.dataSource = self
+        
+        // large title
+        navigationController?.navigationBar.prefersLargeTitles = true
+
 
         fetchMovies()
     }
