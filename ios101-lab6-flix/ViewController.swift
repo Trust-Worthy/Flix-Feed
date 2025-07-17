@@ -72,6 +72,17 @@ class ViewController: UIViewController, UITableViewDataSource {
         fetchMovies()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                
+            // Deselect the currently selected row
+            
+            tableView.deselectRow(at: selectedIndexPath, animated: animated)
+            
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // This is the prepare for segue method.
         guard let selectedIndexPath: IndexPath = tableView.indexPathForSelectedRow else {return}
