@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  ios101-lab5-flix1
+//  ios101-lab6-flix
 //
 
 import UIKit
