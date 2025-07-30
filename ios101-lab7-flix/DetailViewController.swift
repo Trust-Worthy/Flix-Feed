@@ -40,7 +40,9 @@ class DetailViewController: UIViewController {
 
         // TODO: Update favorite button selected state
         favoriteButton.layer.cornerRadius = favoriteButton.frame.width / 2
-
+        // Update the button's selected state based on the current movie's favorited status
+        
+        // 1. Get the array of favoritied movies 
 
 
         // MARK: Style views

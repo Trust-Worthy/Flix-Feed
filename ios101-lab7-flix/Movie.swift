@@ -28,6 +28,7 @@ extension Movie {
         
         // 3. Save the encoded movie `Data` to UserDefaults
         defaults.set(encodedData, forKey: key)
+        print(movies)
     }
     
     static func getMovies(forKey key: String) -> [Movie] {
@@ -63,6 +64,7 @@ extension Movie {
         
         // 3. Save the updated favorite movie array
         Movie.save(favoriteMovies, forKey: Movie.favoritesKey)
+        print(favoriteMovies)
     }
     
     func removeFromFavorites() {
@@ -75,11 +77,13 @@ extension Movie {
         
         favoriteMovies.removeAll { movie in
 //            3. If a given movie passed into the closure is equal to `self` (i.e. the movie calling the method) we want to remove it. Returning a `Bool` of `true` removes the given movie.
+            
                 return self == movie
         }
         
         // 4. Save the updated favorite movies array
         Movie.save(favoriteMovies, forKey: Movie.favoritesKey)
+        print(favoriteMovies)
         
         
     }
