@@ -23,6 +23,14 @@ class DetailViewController: UIViewController {
     @IBAction func didTapFavoriteButton(_ sender: UIButton) {
         
         sender.isSelected = !sender.isSelected
+        
+        if sender.isSelected {
+            // 1. If the button is in the selected state aka "favorited" --> add movie to favorites
+            movie.addToFavorites()
+        } else {
+            // 2. Otherwise, the button is in the un-selected state --> remove movie from favorites
+            movie.removeFromFavorites()
+        }
     }
     
     var movie: Movie!
