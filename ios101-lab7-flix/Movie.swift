@@ -30,6 +30,25 @@ extension Movie {
         defaults.set(encodedData, forKey: key)
     }
     
+    static func getMovies(forKey key: String) -> [Movie] {
+        
+        // 1. Create an instance of UserDefaults
+        let defaults = UserDefaults.standard
+        
+        // 2. Get any favorite movies saved to UserDefaults if any exist
+        if let data = defaults.data(forKey: key) {
+            
+            // 3. Try to decode the movie `Data` to `Movie` objects
+            let decodedMovies = try! JSONDecoder().decode([Movie].self, from: data)
+            
+            // 4. if step 2 & 3 are successful , return the array of movies
+            return decodedMovies
+        } else {
+            // 5. otherwise return an empty array
+            return []
+        }
+    }
+    
 }
 
 struct Movie: Codable {
