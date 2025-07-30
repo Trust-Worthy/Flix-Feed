@@ -30,7 +30,11 @@ class FavoritesViewController: UIViewController, UITableViewDataSource {
         }
 
         // TODO: Get favorite movies and display in table view
-
+        // 1.
+        let movies = Movie.getMovies(forKey: Movie.favoritesKey)
+        
+        // 2. Set the favoriteMovies Property so the table view data source methods will have access to latest favorite movies.
+        
 
     }
 
