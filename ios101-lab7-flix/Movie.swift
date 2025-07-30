@@ -49,6 +49,22 @@ extension Movie {
         }
     }
     
+    // Start of the instance methods
+    
+    func addToFavorites() {
+        
+        // 1. Get all favorite movies from UserDefaults
+        // favoriteMovies is a var so that it can be modified
+        var favoriteMovies = Movie.getMovies(forKey: Movie.favoritesKey)
+        
+        // 2. Add the movie to the favorite movie array
+        // This method is available on "instances" of a movie, so I can reference the movie this method is being called on using `self`.
+        favoriteMovies.append(self)
+        
+        // 3. Save the updated favorite movie array
+        Movie.save(favoriteMovies, forKey: Movie.favoritesKey)
+    }
+    
 }
 
 struct Movie: Codable {
