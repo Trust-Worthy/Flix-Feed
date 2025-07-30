@@ -17,7 +17,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var releaseDateLabel: UILabel!
 
     // TODO: Add favorite button outlet
-
+    @IBOutlet weak var favoriteButton: UIButton!
+    
     // TODO: Add favorite button action
 
     var movie: Movie!
@@ -26,7 +27,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // TODO: Update favorite button selected state
-
+        favoriteButton.layer.cornerRadius = favoriteButton.frame.width / 2
 
 
 
