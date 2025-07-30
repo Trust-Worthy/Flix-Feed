@@ -34,7 +34,10 @@ class FavoritesViewController: UIViewController, UITableViewDataSource {
         let movies = Movie.getMovies(forKey: Movie.favoritesKey)
         
         // 2. Set the favoriteMovies Property so the table view data source methods will have access to latest favorite movies.
+        self.favoriteMovies = movies
         
+        // 3. Reload the table view
+        tableView.reloadData()
 
     }
 
