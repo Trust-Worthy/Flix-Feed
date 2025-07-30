@@ -65,9 +65,28 @@ extension Movie {
         Movie.save(favoriteMovies, forKey: Movie.favoritesKey)
     }
     
+    func removeFromFavorites() {
+        
+        // 1. Get all favorite movies from UserDefaults
+        var favoriteMovies = Movie.getMovies(forKey: Movie.favoritesKey)
+        
+        // 2. remove all movies from the array that match the movie instance this method is being called on aka `self`
+        // The `removeAll` method iterates through each movie in the array and passes the movie into a closure where it can be used to determine if it should be removed from the array.
+        
+        favoriteMovies.removeAll { movie in
+//            3. If a given movie passed into the closure is equal to `self` (i.e. the movie calling the method) we want to remove it. Returning a `Bool` of `true` removes the given movie.
+                return self == movie
+        }
+        
+        // 4. Save the updated favorite movies array
+        Movie.save(favoriteMovies, forKey: Movie.favoritesKey)
+        
+        
+    }
+    
 }
 
-struct Movie: Codable {
+struct Movie: Codable, Equatable {
     let title: String
     let overview: String
     let posterPath: String? // Path used to create a URL to fetch the poster image
