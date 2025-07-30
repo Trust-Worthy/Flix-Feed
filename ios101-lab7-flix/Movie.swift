@@ -9,7 +9,13 @@ struct MovieFeed: Decodable {
     let results: [Movie]
 }
 
-struct Movie: Decodable {
+// Methods for saving, retrieving and removing from favorites
+// from User Defaults
+extension Movie {
+    
+}
+
+struct Movie: Codable {
     let title: String
     let overview: String
     let posterPath: String? // Path used to create a URL to fetch the poster image
