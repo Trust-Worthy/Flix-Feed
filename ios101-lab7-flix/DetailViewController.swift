@@ -20,7 +20,11 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var favoriteButton: UIButton!
     
     // TODO: Add favorite button action
-
+    @IBAction func didTapFavoriteButton(_ sender: UIButton) {
+        
+        sender.isSelected = !sender.isSelected
+    }
+    
     var movie: Movie!
 
     override func viewDidLoad() {
