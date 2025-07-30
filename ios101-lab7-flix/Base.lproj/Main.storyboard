@@ -156,11 +156,11 @@
             </objects>
             <point key="canvasLocation" x="2808.3969465648852" y="-308.45070422535213"/>
         </scene>
-        <!--Item-->
+        <!--Popular-->
         <scene sceneID="c88-ii-B8m">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r00-Jb-S6c" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="i8G-ri-gmu"/>
+                    <tabBarItem key="tabBarItem" title="Popular" image="popcorn.fill" catalog="system" id="i8G-ri-gmu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w23-6k-Os7">
                         <rect key="frame" x="0.0" y="118" width="393" height="44"/>
@@ -289,6 +289,7 @@
     <resources>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="popcorn.fill" catalog="system" width="98" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
