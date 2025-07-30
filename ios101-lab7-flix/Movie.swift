@@ -13,6 +13,23 @@ struct MovieFeed: Decodable {
 // from User Defaults
 extension Movie {
     
+    static var favoritesKey: String {
+        return "Favorites"
+    }
+    
+    // Save an array of favorites movies to UserDefaults
+    static func save(_ movies: [Movie], forKey key: String) {
+        
+        // 1. Create an instance of UserDefaults
+        let defaults = UserDefaults.standard
+        
+        // 2. Try to encode the arry of `Movie` objects to `Data`
+        let encodedData = try! JSONEncoder().encode(movies)
+        
+        // 3. Save the encoded movie `Data` to UserDefaults
+        defaults.set(encodedData, forKey: key)
+    }
+    
 }
 
 struct Movie: Codable {
