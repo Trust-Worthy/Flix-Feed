@@ -42,7 +42,17 @@ class DetailViewController: UIViewController {
         favoriteButton.layer.cornerRadius = favoriteButton.frame.width / 2
         // Update the button's selected state based on the current movie's favorited status
         
-        // 1. Get the array of favoritied movies 
+        // 1. Get the array of favoritied movies
+        let favorites = Movie.getMovies(forKey: Movie.favoritesKey)
+        
+        // 2. Check if the favorite movies array contains the current movie
+        if favorites.contains(movie) {
+            // 3. if so, the movie has been already favorited --> set the button to the selected state
+            favoriteButton.isSelected = true
+        } else {
+            // 4. otherwise, the movie is not favorited --> set the button to the un-selected state
+            favoriteButton.isSelected = false
+        }
 
 
         // MARK: Style views
